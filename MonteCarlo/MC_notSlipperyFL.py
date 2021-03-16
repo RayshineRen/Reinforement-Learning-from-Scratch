@@ -71,7 +71,7 @@ def monte_calro_qFunc(env, gamma=1.0, epslion=0.15, episodes=50000):
         for step in range(N):
             N_table[states[step]][actions[step]] += 1
             # if states[step] not in states[:step]:
-                # 在第一个状态路过两次。e.g. [0, 0, 4, 8, 9, 13, 14] 只会记录第一次动作的价值，而且是错误的！
+            # 在第一个状态路过两次。e.g. [0, 0, 4, 8, 9, 13, 14] 只会记录第一次动作的价值，而且是错误的！
             Q_table[states[step]][actions[step]] += 1/N_table[states[step]][actions[step]] * (G - Q_table[states[step]][actions[step]])
             G -= rewards[step]
             G /= gamma

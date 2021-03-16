@@ -3,7 +3,7 @@ from gym.envs.registration import register
 from gridworld import FrozenLakeWapper
 import time
 
-no_slippery = True
+no_slippery = False
 render_last = True # whether to visualize the last episode in testing
 
 episodes = 10000
