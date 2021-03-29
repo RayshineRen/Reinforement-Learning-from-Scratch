@@ -63,3 +63,7 @@ TD之off policy算法实例。包括使用Q_Learning的算法解决FrozenLake和
 ### 4.Sarsa
 
 TD之on policy算法实例。包括使用Sarsa的算法解决FrozenLake和Taxi-v3环境。引入了PARL的gridworld环境，可以将CliffWalk和FrozenLake环境用turtle绘图进行可视化。自己要学会将算法应用到新的环境中。本算法与Q_Learning算法仅仅有几行区别。
+
+### 5.Function approximation
+
+函数近似。状态空间过于巨大时，需要函数近似，将未知的状态近似到已知的状态。
